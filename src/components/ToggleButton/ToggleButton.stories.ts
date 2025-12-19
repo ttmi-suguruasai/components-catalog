@@ -5,7 +5,7 @@ import { fn } from 'storybook/test';
 import { ToggleButton } from './ToggleButton';
 
 const meta = {
-  title: 'Example/ToggleButton',
+  title: 'Components/ToggleButton',
   component: ToggleButton,
   parameters: {
     layout: 'centered',
