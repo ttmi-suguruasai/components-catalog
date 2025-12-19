@@ -7,7 +7,8 @@ React + TypeScript + Vite で構築されたUIコンポーネントカタログ�
 - React 19
 - TypeScript
 - Vite
-- Storybook
+- Tailwind CSS
+- Storybook 10
 
 ## セットアップ
 
@@ -33,6 +34,16 @@ npm run build
 
 # Storybookビルド
 npm run build-storybook
+```
+
+## コード品質
+
+```bash
+# Lint
+npm run lint
+
+# テスト
+npx vitest --project=storybook
 ```
 
 ## コンポーネント
