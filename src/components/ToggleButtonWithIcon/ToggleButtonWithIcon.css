@@ -1,0 +1,175 @@
+/* ToggleButtonWithIcon */
+.toggle-with-icon {
+  display: inline-flex;
+  align-items: stretch;
+  padding: 6px;
+  gap: 0;
+}
+
+.toggle-with-icon--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+/* オプションボタン共通 */
+.toggle-with-icon__option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 90px;
+}
+
+.toggle-with-icon__icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-with-icon__label {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+/* ========================================
+   ROUNDED (丸形スライドトグル)
+   ======================================== */
+.toggle-with-icon--rounded {
+  border-radius: 50px;
+  padding: 6px;
+}
+
+.toggle-with-icon--rounded .toggle-with-icon__option {
+  border-radius: 40px;
+  padding: 10px 20px;
+}
+
+.toggle-with-icon--rounded .toggle-with-icon__option--selected {
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Rounded - Orange */
+.toggle-with-icon--rounded.toggle-with-icon--orange {
+  background: #f97316;
+}
+.toggle-with-icon--rounded.toggle-with-icon--orange .toggle-with-icon__option {
+  color: rgba(255, 255, 255, 0.6);
+}
+.toggle-with-icon--rounded.toggle-with-icon--orange .toggle-with-icon__option--selected {
+  color: #f97316;
+}
+
+/* Rounded - Blue */
+.toggle-with-icon--rounded.toggle-with-icon--blue {
+  background: #3b82f6;
+}
+.toggle-with-icon--rounded.toggle-with-icon--blue .toggle-with-icon__option {
+  color: rgba(255, 255, 255, 0.6);
+}
+.toggle-with-icon--rounded.toggle-with-icon--blue .toggle-with-icon__option--selected {
+  color: #3b82f6;
+}
+
+/* Rounded - Purple */
+.toggle-with-icon--rounded.toggle-with-icon--purple {
+  background: #a855f7;
+}
+.toggle-with-icon--rounded.toggle-with-icon--purple .toggle-with-icon__option {
+  color: rgba(255, 255, 255, 0.6);
+}
+.toggle-with-icon--rounded.toggle-with-icon--purple .toggle-with-icon__option--selected {
+  color: #a855f7;
+}
+
+/* Rounded - Green */
+.toggle-with-icon--rounded.toggle-with-icon--green {
+  background: #22c55e;
+}
+.toggle-with-icon--rounded.toggle-with-icon--green .toggle-with-icon__option {
+  color: rgba(255, 255, 255, 0.6);
+}
+.toggle-with-icon--rounded.toggle-with-icon--green .toggle-with-icon__option--selected {
+  color: #22c55e;
+}
+
+/* Rounded - Red */
+.toggle-with-icon--rounded.toggle-with-icon--red {
+  background: #ef4444;
+}
+.toggle-with-icon--rounded.toggle-with-icon--red .toggle-with-icon__option {
+  color: rgba(255, 255, 255, 0.6);
+}
+.toggle-with-icon--rounded.toggle-with-icon--red .toggle-with-icon__option--selected {
+  color: #ef4444;
+}
+
+/* ========================================
+   SQUARE (四角形セグメントコントロール)
+   ======================================== */
+.toggle-with-icon--square {
+  background: #e5e5e5;
+  border-radius: 16px;
+  padding: 6px;
+}
+
+.toggle-with-icon--square .toggle-with-icon__option {
+  border-radius: 12px;
+  padding: 14px 24px;
+  color: #9ca3af;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+.toggle-with-icon--square .toggle-with-icon__option--selected {
+  background: white;
+}
+
+/* Square - Orange */
+.toggle-with-icon--square.toggle-with-icon--orange .toggle-with-icon__option--selected {
+  color: #f97316;
+  box-shadow:
+    0 4px 12px rgba(249, 115, 22, 0.25),
+    0 0 0 2px rgba(249, 115, 22, 0.15);
+}
+
+/* Square - Blue */
+.toggle-with-icon--square.toggle-with-icon--blue .toggle-with-icon__option--selected {
+  color: #3b82f6;
+  box-shadow:
+    0 4px 12px rgba(59, 130, 246, 0.25),
+    0 0 0 2px rgba(59, 130, 246, 0.15);
+}
+
+/* Square - Purple */
+.toggle-with-icon--square.toggle-with-icon--purple .toggle-with-icon__option--selected {
+  color: #a855f7;
+  box-shadow:
+    0 4px 12px rgba(168, 85, 247, 0.25),
+    0 0 0 2px rgba(168, 85, 247, 0.15);
+}
+
+/* Square - Green */
+.toggle-with-icon--square.toggle-with-icon--green .toggle-with-icon__option--selected {
+  color: #22c55e;
+  box-shadow:
+    0 4px 12px rgba(34, 197, 94, 0.25),
+    0 0 0 2px rgba(34, 197, 94, 0.15);
+}
+
+/* Square - Red */
+.toggle-with-icon--square.toggle-with-icon--red .toggle-with-icon__option--selected {
+  color: #ef4444;
+  box-shadow:
+    0 4px 12px rgba(239, 68, 68, 0.25),
+    0 0 0 2px rgba(239, 68, 68, 0.15);
+}
