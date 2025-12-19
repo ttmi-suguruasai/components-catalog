@@ -1,0 +1,93 @@
+.toggle-button-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.toggle-button {
+  position: relative;
+  border: none;
+  border-radius: 999px;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toggle-button--small {
+  width: 36px;
+  height: 20px;
+}
+
+.toggle-button--medium {
+  width: 48px;
+  height: 26px;
+}
+
+.toggle-button--large {
+  width: 60px;
+  height: 32px;
+}
+
+.toggle-button__slider {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.toggle-button--small .toggle-button__slider {
+  width: 16px;
+  height: 16px;
+}
+
+.toggle-button--medium .toggle-button__slider {
+  width: 22px;
+  height: 22px;
+}
+
+.toggle-button--large .toggle-button__slider {
+  width: 28px;
+  height: 28px;
+}
+
+.toggle-button--checked {
+  background-color: #1ea7fd;
+}
+
+.toggle-button--checked .toggle-button__slider {
+  transform: translateX(100%);
+}
+
+.toggle-button--small.toggle-button--checked .toggle-button__slider {
+  transform: translateX(16px);
+}
+
+.toggle-button--medium.toggle-button--checked .toggle-button__slider {
+  transform: translateX(22px);
+}
+
+.toggle-button--large.toggle-button--checked .toggle-button__slider {
+  transform: translateX(28px);
+}
+
+.toggle-button--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.toggle-button__label {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.toggle-button-wrapper--small .toggle-button__label {
+  font-size: 12px;
+}
+
+.toggle-button-wrapper--large .toggle-button__label {
+  font-size: 16px;
+}
