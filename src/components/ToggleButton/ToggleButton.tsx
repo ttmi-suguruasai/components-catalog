@@ -3,21 +3,21 @@ import { useState } from 'react';
 import './toggle-button.css';
 
 export interface ToggleButtonProps {
-  /** Initial state of the toggle */
+  /** トグルの初期状態 */
   defaultChecked?: boolean;
-  /** Controlled checked state */
+  /** トグルの状態（制御コンポーネント用） */
   checked?: boolean;
-  /** Disable the toggle */
+  /** 無効化 */
   disabled?: boolean;
-  /** Size of the toggle */
+  /** サイズ */
   size?: 'small' | 'medium' | 'large';
-  /** Label for the toggle */
+  /** ラベル */
   label?: string;
-  /** Callback when toggle state changes */
+  /** 状態変更時のコールバック */
   onChange?: (checked: boolean) => void;
 }
 
-/** Toggle button component for switching between on/off states */
+/** オン/オフ状態を切り替えるトグルボタンコンポーネント */
 export const ToggleButton = ({
   defaultChecked = false,
   checked,
