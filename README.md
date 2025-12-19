@@ -9,6 +9,7 @@ React + TypeScript + Vite で構築されたUIコンポーネントカタログ�
 - Vite
 - Tailwind CSS
 - Storybook 10
+- lucide-react (アイコンライブラリ)
 
 ## セットアップ
 
@@ -48,4 +49,17 @@ npx vitest --project=storybook
 
 ## コンポーネント
 
-- **ToggleButton** - オン/オフ状態を切り替えるトグルボタン
+### ToggleButton
+シンプルなオン/オフ状態を切り替えるトグルボタン
+
+### ToggleButtonWithIcon
+アイコン付きのトグルボタンコンポーネント。2つのバリエーションがあります：
+
+- **rounded** - 丸形スライドトグルスイッチ（ピル型）
+- **square** - 四角形セグメントコントロール
+
+#### 特徴
+- lucide-reactのアイコン名を文字列で指定可能
+- カスタムReactNodeも指定可能
+- 5色のアクセントカラー（orange, blue, purple, green, red）
+- 制御・非制御両対応
